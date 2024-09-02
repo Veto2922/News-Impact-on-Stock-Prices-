@@ -4,6 +4,8 @@
 
 This project explores the impact of news sentiment on stock prices through a comprehensive analysis of news headlines and historical stock data. It involves data collection, preprocessing, sentiment analysis, exploratory data analysis (EDA), and the development and evaluation of various machine learning and deep learning models.
 
+For more info please visit the [Project Medium Article](https://medium.com/@abdelrahman.m2922/analyzing-news-impact-on-stock-prices-and-sentiment-classification-19b29d5fc670
+
 ## Table of Contents
 
 1. [Web Scraping](#web-scraping)
