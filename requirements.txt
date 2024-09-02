@@ -1,0 +1,9 @@
+urllib
+beautifulsoup4
+pandas
+yfinance
+nltk
+gensim
+transformers
+scipy
+-e .
