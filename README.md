@@ -17,6 +17,7 @@ For more info please visit the [Project Medium Article](https://medium.com/@abde
 
 ## Web Scraping
 
+
 ### Why Finviz?
 
 Finviz was selected as the data source due to its comprehensive market data, including news headlines for various stock tickers. Its structured news table layout facilitates efficient data extraction.
@@ -49,6 +50,19 @@ def clean_data(df: pd.DataFrame) -> pd.DataFrame:
 ### Results
 
 The cleaned data includes columns for Ticker, Date, Time, and Headline. The data is saved to a CSV file for further analysis.
+
+- Web Application
+
+To simplify the process of extracting and analyzing data, a Streamlit application was developed. The app allows users to:
+![image](https://github.com/user-attachments/assets/417c087a-8a71-43ff-b979-0daa83f207b3)
+
+Input Stock Tickers: Enter a list of stock tickers separated by commas.
+
+Fetch and Clean Data: Automatically fetch and clean news data, retrieve stock prices and merge the datasets.
+
+View and Download Data: Display the final DataFrame and provide an option to download it as a CSV file.
+
+
 
 ## Stock Price Data Collection
 
@@ -91,8 +105,14 @@ The `calculate_average_sentiment` function computes the average sentiment score 
 ### EDA
 
 1. **Scatter Plot of Sentiment vs. Price Change**: No significant effect of sentiment on stock prices.
-2. **Correlation Heatmap**: Very weak correlation between sentiment scores and price changes.
-3. **Sentiment and Price Change Plots for Specific Tickers**: Varied impact across different companies (e.g., DELL, GOOGL, NFLX, ORCL, BABA).
+   ![image](https://github.com/user-attachments/assets/89f41d2a-2d27-421c-ab1a-ef7fa3b86cbd)
+
+3. **Correlation Heatmap**: Very weak correlation between sentiment scores and price changes.
+  ![image](https://github.com/user-attachments/assets/36ad3797-8b78-46de-8ebe-d7d8012f359a)
+
+
+4. **Sentiment and Price Change Plots for Specific Tickers**: Varied impact across different companies (e.g., DELL, GOOGL, NFLX, ORCL, BABA).
+    ![image](https://github.com/user-attachments/assets/b6980226-9b38-41f6-9040-354d868e0d2e)
 
 ### Final Insights
 
@@ -127,6 +147,8 @@ The `calculate_average_sentiment` function computes the average sentiment score 
 - **Random Forest**: Balanced performance across metrics.
 - **DistilRoBERTa**: Outperformed traditional models in recall and F1-score.
 - **RNN**: Underperformed due to limited dataset size.
+  ![image](https://github.com/user-attachments/assets/00d5f8a0-97bd-4ced-8980-276abcff16e9)
+
 
 ### Conclusion
 
